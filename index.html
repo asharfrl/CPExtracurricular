@@ -1,0 +1,983 @@
+<!DOCTYPE html>
+<!--[if lt IE 8 ]><html class="no-js ie ie7" lang="en"> <![endif]-->
+<!--[if IE 8 ]><html class="no-js ie ie8" lang="en"> <![endif]-->
+<!--[if (gte IE 8)|!(IE)]><!--><html class="no-js" lang="en"> <!--<![endif]-->
+<head>
+
+   <!--- Basic Page Needs
+   ================================================== -->
+   <meta charset="utf-8">
+	<title>BadmintonWeb</title>
+	<meta name="description" content="">
+	<meta name="author" content="">
+
+   <!-- Mobile Specific Metas
+   ================================================== -->
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+	<!-- CSS
+    ================================================== -->
+   <link rel="stylesheet" href="css/default.css">
+   <link rel="stylesheet" href="css/media-queries.css">
+   <link rel="stylesheet" href="css/magnific-popup.css">
+
+   <!-- Script
+   ================================================== -->
+	<script src="js/modernizr.js"></script>
+
+   <!-- Favicons
+	================================================== -->
+	<link rel="shortcut icon" href="TunasMediaLogo.png" >
+
+</head>
+
+<body>
+<style>
+       /*
+    =====================================================================
+    *   Ceevee v1.0 Layout Stylesheet
+    *   url: styleshout.com
+    *   03-18-2014
+    =====================================================================
+
+       TOC:
+       a. General Styles
+       b. Header Styles
+       c. About Section
+       e. Portfolio Section
+       g. Gallery Section
+       h. Regist Section
+       i. Footer
+
+    ===================================================================== */
+
+    /* ------------------------------------------------------------------ */
+    /* a. General Styles
+    /* ------------------------------------------------------------------ */
+
+    body { background: #0f0f0f; }
+
+    /* ------------------------------------------------------------------ */
+    /* b. Header Styles
+    /* ------------------------------------------------------------------ */
+
+    header {
+       position: relative;
+       height: 800px;
+       min-height: 500px;
+       width: 100%;
+       background: #161415 url(badminton.jpg) no-repeat top center;
+       background-size: cover !important;
+    	-webkit-background-size: cover !important;
+       text-align: center;
+       overflow: hidden;
+    }
+
+    /* vertically center banner section */
+    header:before {
+       content: '';
+       display: inline-block;
+       vertical-align: middle;
+       height: 100%;
+    }
+    header .banner {
+       display: inline-block;
+       vertical-align: middle;
+       margin: 0 auto;
+       width: 85%;
+       padding-bottom: 30px;s
+       text-align: center;
+    }
+
+    header .banner-text { width: 100%; }
+    header .banner-text h1 {
+       font: 90px/1.1em 'opensans-bold', sans-serif;
+       color: #fff;
+       letter-spacing: -2px;
+       margin: 0 auto 18px auto;
+       text-shadow: 0px 1px 3px rgba(0, 0, 0, .8);
+    }
+    header .banner-text h3 {
+       font: 18px/1.9em 'librebaskerville-regular', serif;
+       color: #A8A8A8;
+       margin: 0 auto;
+       width: 70%;
+       text-shadow: 0px 1px 2px rgba(0, 0, 0, .5);
+    }
+    header .banner-text h3 span,
+    header .banner-text h3 a {
+       color: #fff;
+    }
+    header .banner-text hr {
+       width: 60%;
+       margin: 18px auto 24px auto;
+       border-color: #2F2D2E;
+       border-color: rgba(150, 150, 150, .1);
+    }
+
+    /* header social links */
+    header .social {
+       margin: 24px 0;
+       padding: 0;
+       font-size: 30px;
+       text-shadow: 0px 1px 2px rgba(0, 0, 0, .8);
+    }
+    header .social li {
+       display: inline-block;
+       margin: 0 15px;
+       padding: 0;
+    }
+    header .social li a { color: #fff; }
+    header .social li a:hover { color: #11ABB0; }
+
+    /* scrolldown link */
+    header .scrolldown a {
+       position: absolute;
+       bottom: 30px;
+       left: 50%;
+       margin-left: -29px;
+       color: #fff;
+       display: block;
+       height: 42px;
+       width: 42px;
+       font-size: 42px;
+       line-height: 42px;
+       color: #fff;
+       border-radius: 100%;
+
+       -webkit-transition: all .3s ease-in-out;
+       -moz-transition: all .3s ease-in-out;
+       -o-transition: all .3s ease-in-out;
+       transition: all .3s ease-in-out;
+    }
+    header .scrolldown a:hover { color: #11ABB0; }
+
+    /* primary navigation
+    --------------------------------------------------------------------- */
+    #nav-wrap ul, #nav-wrap li, #nav-wrap a {
+    	 margin: 0;
+    	 padding: 0;
+    	 border: none;
+    	 outline: none;
+    }
+
+    /* nav-wrap */
+    #nav-wrap {
+       font: 12px 'opensans-bold', sans-serif;
+       width: 100%;
+       text-transform: uppercase;
+       letter-spacing: 2.5px;
+       margin: 0 auto;
+       z-index: 100;
+       position: fixed;
+       left: 0;
+       top: 0;
+    }
+    .opaque { background-color: #333; }
+
+    /* hide toggle button */
+    #nav-wrap > a.mobile-btn { display: none; }
+
+    ul#nav {
+       min-height: 48px;
+       width: auto;
+
+       /* center align the menu */
+       text-align: center;
+    }
+    ul#nav li {
+       position: relative;
+       list-style: none;
+       height: 48px;
+       display: inline-block;
+    }
+
+    /* Links */
+    ul#nav li a {
+
+    /* 8px padding top + 8px padding bottom + 32px line-height = 48px */
+
+       display: inline-block;
+       padding: 8px 13px;
+       line-height: 32px;
+    	text-decoration: none;
+       text-align: left;
+       color: #fff;
+
+    	-webkit-transition: color .2s ease-in-out;
+    	-moz-transition: color .2s ease-in-out;
+    	-o-transition: color .2s ease-in-out;
+    	-ms-transition: color .2s ease-in-out;
+    	transition: color .2s ease-in-out;
+    }
+
+    ul#nav li a:active { background-color: transparent !important; }
+    ul#nav li.current a { color: #F06000; }
+
+
+    /* ------------------------------------------------------------------ */
+    /* c. About Section
+    /* ------------------------------------------------------------------ */
+
+    #about {
+       background: #2B2B2B;
+       padding-top: 96px;
+       padding-bottom: 66px;
+       overflow: hidden;
+    }
+
+    #about a, #about a:visited  { color: #fff; }
+    #about a:hover, #about a:focus { color: #11ABB0; }
+
+    #about h2 {
+       font: 22px/30px 'opensans-bold', sans-serif;
+       color: #fff;
+       margin-bottom: 12px;
+    }
+    #about p {
+       line-height: 30px;
+       color: #7A7A7A;
+    }
+    #about .profile-pic {
+       position: relative;
+       width: 120px;
+       height: 120px;
+       border-radius: 100%;
+    }
+    #about .contact-details { width: 41.66667%; }
+    #about .download {
+       width: 58.33333%;
+       padding-top: 6px;
+    }
+    #about .main-col { padding-right: 5%; }
+    #about .download .button {
+       margin-top: 6px;
+       background: #444;
+    }
+    #about .download .button:hover {
+       background: #fff;
+       color: #2B2B2B;
+    }
+    #about .download .button i {
+       margin-right: 15px;
+       font-size: 20px;
+    }
+
+
+    /* ------------------------------------------------------------------ */
+    /* e. Portfolio Section
+    /* ------------------------------------------------------------------ */
+
+    #portfolio {
+       background: #ebeeee;
+       padding-top: 90px;
+       padding-bottom: 60px;
+    }
+    #portfolio h1 {
+       font: 15px/24px 'opensans-semibold', sans-serif;
+       text-transform: uppercase;
+       letter-spacing: 1px;
+       text-align: center;
+       margin-bottom: 48px;
+       color: #95A3A3;
+    }
+
+    /* Portfolio Content */
+    #portfolio-wrapper .columns { margin-bottom: 36px; }
+    .portfolio-item .item-wrap {
+       background: #fff;
+       overflow: hidden;
+       position: relative;
+
+       -webkit-transition: all 0.3s ease-in-out;
+    	-moz-transition: all 0.3s ease-in-out;
+    	-o-transition: all 0.3s ease-in-out;
+    	-ms-transition: all 0.3s ease-in-out;
+    	transition: all 0.3s ease-in-out;
+    }
+    .portfolio-item .item-wrap a {
+       display: block;
+       cursor: pointer;
+    }
+
+    /* overlay */
+    .portfolio-item .item-wrap .overlay {
+       position: absolute;
+       left: 0;
+       top: 0;
+       width: 100%;
+       height: 100%;
+
+    	opacity: 0;
+    	-moz-opacity: 0;
+    	filter:alpha(opacity=0);
+
+       -webkit-transition: opacity 0.3s ease-in-out;
+    	-moz-transition: opacity 0.3s ease-in-out;
+    	-o-transition: opacity 0.3s ease-in-out;
+    	transition: opacity 0.3s ease-in-out;
+
+       background: url(../images/overlay-bg.png) repeat;
+    }
+    .portfolio-item .item-wrap .link-icon {
+       display: block;
+       color: #fff;
+       height: 30px;
+       width: 30px;
+       font-size: 18px;
+       line-height: 30px;
+       text-align: center;
+
+       opacity: 0;
+    	-moz-opacity: 0;
+    	filter:alpha(opacity=0);
+
+       -webkit-transition: opacity 0.3s ease-in-out;
+    	-moz-transition: opacity 0.3s ease-in-out;
+    	-o-transition: opacity 0.3s ease-in-out;
+    	transition: opacity 0.3s ease-in-out;
+
+       position: absolute;
+       top: 50%;
+       left: 50%;
+       margin-left: -15px;
+       margin-top: -15px;
+    }
+    .portfolio-item .item-wrap img {
+       vertical-align: bottom;
+    }
+    .portfolio-item .portfolio-item-meta { padding: 18px }
+    .portfolio-item .portfolio-item-meta h5 {
+       font: 14px/21px 'opensans-bold', sans-serif;
+       color: #fff;
+    }
+    .portfolio-item .portfolio-item-meta p {
+       font: 12px/18px 'opensans-light', sans-serif;
+       color: #c6c7c7;
+       margin-bottom: 0;
+    }
+
+    /* on hover */
+    .portfolio-item:hover .overlay {
+    	opacity: 1;
+    	-moz-opacity: 1;
+    	filter:alpha(opacity=100);
+    }
+    .portfolio-item:hover .link-icon {
+       opacity: 1;
+    	-moz-opacity: 1;
+    	filter:alpha(opacity=100);
+    }
+
+    /* popup modal */
+    .popup-modal {
+    	max-width: 550px;
+    	background: #fff;
+    	position: relative;
+    	margin: 0 auto;
+    }
+    .popup-modal .description-box { padding: 12px 36px 18px 36px; }
+    .popup-modal .description-box h4 {
+       font: 15px/24px 'opensans-bold', sans-serif;
+    	margin-bottom: 12px;
+       color: #111;
+    }
+    .popup-modal .description-box p {
+    	font: 14px/24px 'opensans-regular', sans-serif;
+       color: #A1A1A1;
+       margin-bottom: 12px;
+    }
+    .popup-modal .description-box .categories {
+       font: 11px/21px 'opensans-light', sans-serif;
+       color: #A1A1A1;
+       text-transform: uppercase;
+       letter-spacing: 2px;
+       display: block;
+       text-align: left;
+    }
+    .popup-modal .description-box .categories i {
+       margin-right: 8px;
+    }
+    .popup-modal .link-box {
+       padding: 18px 36px;
+       background: #111;
+       text-align: left;
+    }
+    .popup-modal .link-box a {
+       color: #fff;
+    	font: 11px/21px 'opensans-bold', sans-serif;
+    	text-transform: uppercase;
+       letter-spacing: 3px;
+       cursor: pointer;
+    }
+    .popup-modal a:hover {	color: #00CCCC; }
+    .popup-modal a.popup-modal-dismiss { margin-left: 24px; }
+
+
+    /* fadein/fadeout effect for modal popup
+    /* ------------------------------------------------------------------ */
+
+    /* content at start */
+    .mfp-fade.mfp-wrap .mfp-content .popup-modal {
+       opacity: 0;
+       -webkit-transition: all 200ms ease-in-out;
+    	-moz-transition: all 200ms ease-in-out;
+    	-o-transition: all 200ms ease-in-out;
+    	-ms-transition: all 200ms ease-in-out;
+       transition: all 200ms ease-in-out;
+    }
+    /* content fadein */
+    .mfp-fade.mfp-wrap.mfp-ready .mfp-content .popup-modal {
+       opacity: 1;
+    }
+    /* content fadeout */
+    .mfp-fade.mfp-wrap.mfp-removing .mfp-content .popup-modal {
+       opacity: 0;
+    }
+
+    /* ------------------------------------------------------------------ */
+   /* h. Regist Section
+   /* ------------------------------------------------------------------ */
+
+#regist {
+   background: #191919;
+   padding-top: 96px;
+   padding-bottom: 102px;
+   color: #636363;
+}
+#regist .section-head { margin-bottom: 42px; }
+
+#regist a, #regist a:visited  { color: #11ABB0; }
+#regist a:hover, #regist a:focus { color: #fff; }
+
+#regist h1 {
+   font: 18px/24px 'opensans-bold', sans-serif;
+   text-transform: uppercase;
+   letter-spacing: 3px;
+   color: #EBEEEE;
+   margin-bottom: 6px;
+}
+#regist h1 span { display: none; }
+#regist h1:before {
+   font-family: 'FontAwesome';
+   content: "\f0e0";
+	padding-right: 10px;
+	font-size: 72px;
+   line-height: 72px;
+   text-align: left;
+   float: left;
+   color: #ebeeee;
+}
+
+#regist h4 {
+   font: 16px/24px 'opensans-bold', sans-serif;
+   color: #EBEEEE;
+   margin-bottom: 6px;
+}
+#regist p.lead {
+   font: 18px/36px 'opensans-light', sans-serif;
+   padding-right: 3%;
+}
+#regist .header-col { padding-top: 6px; }
+
+
+/* contact form */
+#regist form { margin-bottom: 30px; }
+#regist label {
+   font: 15px/24px 'opensans-bold', sans-serif;
+   margin: 12px 0;
+   color: #EBEEEE;
+	display: inline-block;
+	float: left;
+   width: 26%;
+}
+#regist input,
+#regist textarea,
+#regist select {
+   padding: 18px 20px;
+	color: #eee;
+	background: #373233;
+	margin-bottom: 42px;
+	border: 0;
+	outline: none;
+   font-size: 15px;
+   line-height: 24px;
+   width: 65%;
+}
+#regist input:focus,
+#regist textarea:focus,
+#regist select:focus {
+	color: #fff;
+	background-color: #11ABB0;
+}
+#regist button.submit {
+	text-transform: uppercase;
+	letter-spacing: 3px;
+	color:#fff;
+   background: #0D0D0D;
+	border: none;
+   cursor: pointer;
+   height: auto;
+   display: inline-block;
+	border-radius: 3px;
+   margin-left: 26%;
+}
+#regist button.submit:hover {
+	color: #0D0D0D;
+	background: #fff;
+}
+#regist span.required {
+	color: #11ABB0;
+	font-size: 13px;
+}
+#message-warning, #message-success {
+   display: none;
+	background: #0F0F0F;
+	padding: 24px 24px;
+	margin-bottom: 36px;
+   width: 65%;
+   margin-left: 26%;
+}
+#message-warning { color: #D72828; }
+#message-success { color: #11ABB0; }
+
+#message-warning i,
+#message-success i {
+   margin-right: 10px;
+}
+#image-loader {
+   display: none;
+   position: relative;
+   left: 18px;
+   top: 17px;
+}
+
+
+    /* ------------------------------------------------------------------ */
+    /* i. Footer
+    /* ------------------------------------------------------------------ */
+
+    footer {
+       padding-top: 48px;
+       margin-bottom: 48px;
+       color: #303030;
+       font-size: 14px;
+       text-align: center;
+       position: relative;
+    }
+
+    footer a, footer a:visited { color: #525252; }
+    footer a:hover, footer a:focus { color: #fff; }
+
+    /* copyright */
+    footer .copyright {
+        margin: 0;
+        padding: 0;
+     }
+    footer .copyright li {
+        display: inline-block;
+        margin: 0;
+        padding: 0;
+        line-height: 24px;
+    }
+    .ie footer .copyright li {
+       display: inline;
+    }
+    footer .copyright li:before {
+        content: "\2022";
+        padding-left: 10px;
+        padding-right: 10px;
+        color: #095153;
+    }
+    footer .copyright  li:first-child:before {
+        display: none;
+    }
+
+    /* social links */
+    footer .social-links {
+       margin: 18px 0 30px 0;
+       padding: 0;
+       font-size: 30px;
+    }
+    footer .social-links li {
+        display: inline-block;
+        margin: 0;
+        padding: 0;
+        margin-left: 42px;
+        color: #F06000;
+    }
+
+    footer .social-links li:first-child { margin-left: 0; }
+
+    /* Go To Top Button */
+    #go-top {
+    	position: absolute;
+    	top: -24px;
+       left: 50%;
+       margin-left: -30px;
+    }
+    #go-top a {
+    	text-decoration: none;
+    	border: 0 none;
+    	display: block;
+    	width: 60px;
+    	height: 60px;
+    	background-color: #525252;
+
+    	-webkit-transition: all 0.2s ease-in-out;
+       -moz-transition: all 0.2s ease-in-out;
+       -o-transition: all 0.2s ease-in-out;
+       -ms-transition: all 0.2s ease-in-out;
+       transition: all 0.2s ease-in-out;
+
+       color: #fff;
+       font-size: 21px;
+       line-height: 60px;
+     	border-radius: 100%;
+    }
+    #go-top a:hover { background-color: #0F9095; }
+
+
+</style>
+
+   <!-- Header
+   ================================================== -->
+   <header id="home">
+
+      <nav id="nav-wrap">
+         <img src="logo_smk_tm.png">
+         <a class="mobile-btn" href="#nav-wrap" title="Show navigation">Show navigation</a>
+	      <a class="mobile-btn" href="#" title="Hide navigation">Hide navigation</a>
+
+         <ul id="nav" class="nav">
+            <li class="current"><a class="smoothscroll" href="#home">Home</a></li>
+            <li><a class="smoothscroll" href="#about">About</a></li>
+            <li><a class="smoothscroll" href="#portfolio">Gallery</a></li>
+            <li><a class="smoothscroll" href="#regist">Regist</a></li>
+         </ul> <!-- end #nav -->
+
+      </nav> <!-- end #nav-wrap -->
+
+      <div class="row banner">
+         <div class="banner-text">
+            <h1 class="responsive-headline">SMK Tunas Media<br><h2>EkstraKurikuler Badminton</h2>.</h1>
+         </div>
+      </div>
+
+      <p class="scrolldown">
+         <a class="smoothscroll" href="#about"><i class="icon-down-circle"></i></a>
+      </p>
+
+   </header> <!-- Header End -->
+
+
+   <!-- About Section
+   ================================================== -->
+   <section id="about">
+
+      <div class="row">
+
+         <div class="three columns">
+
+            <img class="profile-pic"  src="https://www.smktunasmedia.sch.id/v3/wp-content/uploads/2021/01/kepsek_smktm-1.jpg" alt="" />
+
+         </div>
+
+         <div class="nine columns main-col">
+
+            <h2>Tentang EkstraKurikuler Ini</h2>
+
+            <p>Ekskul badminton adalah salah satu ekskul yang dibina dan di kembangkan di SMK Tunas Media,
+               bulu tangkis merupakan salah satu cabang olah raga yang digemari oleh siswa siswi di SMK Tunas Media serta masyarakat. 
+               SMK Tunas Media mencoba mengembangkan ekstrakurikuler badminton sebagai cabang olah raga unggulan untuk mewadahi siswa
+               siswi nya yang memiliki hobi dan bakat di olah raga tersebut. Lebih jauh lagi ekstrakurikuler bulu tangkis SMK Tunas Media 
+               yang di bina oleh Bapak Yaya Komarudin, M.pd mempersiapkan siswa siswi anggota ekstrakuler badminton untuk tidak hanya 
+               menguasai permainan badminton, namun juga siap fisik dan mental anak-anak.
+            </p>
+
+            <div class="row">
+
+               <div class="columns contact-details">
+
+                  <h2>Kepala Sekolah</h2>
+                  <p class="address">
+						   <span>RONI MADROPI, S.Pd., M.Si,.</span><br>
+					   </p>
+
+               </div>
+
+            <div class="row">
+
+               <div class="columns contact-details">
+
+                  <h2>Pembina Eskul</h2>
+						   <span>YAYA KOMARUDIN, M.pd (Guru Olahraga)</span><br>
+					   </p>
+
+               </div>
+
+
+
+            </div> <!-- end row -->
+
+         </div> <!-- end .main-col -->
+
+      </div>
+
+   </section> <!-- About Section End-->
+   
+
+   <!-- Portfolio Section
+   ================================================== -->
+   <section id="portfolio">
+
+      <div class="row">
+
+         <div class="twelve columns collapsed">
+
+            <h1>Gallery Of Indonesia Badminton</h1>
+
+            <!-- portfolio-wrapper -->
+            <div id="portfolio-wrapper" class="bgrid-quarters s-bgrid-thirds cf">
+
+          	   <div class="columns portfolio-item">
+                  <div class="item-wrap">
+
+                     <a href="#modal-01" title="">
+                        <img alt="" src="https://cdn1-production-images-kly.akamaized.net/mA8qXGf8w01bl5MnDTfJvomrjXo=/1200x1200/smart/filters:quality(75):strip_icc():format(jpeg)/kly-media-production/medias/2944360/original/076016800_1571586069-PBSI_Denmark_Open_2019_DAY6_Final_MD-4.jpg">
+                        <div class="overlay">
+                           <div class="portfolio-item-meta">
+          					   </div>
+                        </div>
+                        <div class="link-icon"><i class="icon-plus"></i></div>
+                     </a>
+
+                  </div>
+          		</div> <!-- item end -->
+
+               <div class="columns portfolio-item">
+                  <div class="item-wrap">
+
+                     <a href="#modal-02" title="">
+                        <img alt="" src="https://cdn1-production-images-kly.akamaized.net/s_A-ErllozSms0HXc2-Hq2VjIdQ=/1200x1200/smart/filters:quality(75):strip_icc():format(jpeg)/kly-media-production/medias/3528197/original/038077400_1627886596-AP21214238433862.jpg">
+                        <div class="overlay">
+                           <div class="portfolio-item-meta">
+          					   </div>
+                        </div>
+                        <div class="link-icon"><i class="icon-plus"></i></div>
+                     </a>
+
+                  </div>
+          		</div> <!-- item end -->
+
+               <div class="columns portfolio-item">
+                  <div class="item-wrap">
+
+                     <a href="#modal-03" title="">
+                        <img alt="" src="https://cdn0-production-images-kly.akamaized.net/ZhnMimKEFlbXvnKo9tV7pAxVSGo=/1200x1200/smart/filters:quality(75):strip_icc():format(jpeg)/kly-media-production/medias/1320605/original/090211600_1471494340-Emas-Bulutangkis1.jpg">
+                        <div class="overlay">
+                           <div class="portfolio-item-meta">
+          					   </div>
+                        </div>
+                        <div class="link-icon"><i class="icon-plus"></i></div>
+                     </a>
+
+                  </div>
+          		</div> <!-- item end -->
+
+               <div class="columns portfolio-item">
+                  <div class="item-wrap">
+
+                     <a href="#modal-04" title="">
+                        <img alt="" src="https://cdn1-production-images-kly.akamaized.net/NA6guBpD9PTFaMZht_rZ3giFPKY=/1200x1200/smart/filters:quality(75):strip_icc():format(jpeg)/kly-media-production/medias/3969069/original/091531900_1647791419-6_AP22079505603823.jpg">
+                        <div class="overlay">
+                           <div class="portfolio-item-meta">
+          					   </div>
+                        </div>
+                        <div class="link-icon"><i class="icon-plus"></i></div>
+                     </a>
+
+                  </div>
+          		</div> <!-- item end -->
+
+
+                  </div>
+          		</div>  <!-- item end -->
+
+            </div> <!-- portfolio-wrapper end -->
+
+         </div> <!-- twelve columns end -->
+
+
+         <!-- Modal Popup
+	      --------------------------------------------------------------- -->
+
+         <div id="modal-01" class="popup-modal mfp-hide">
+
+		      <img class="scale-with-grid" src="https://cdn1-production-images-kly.akamaized.net/mA8qXGf8w01bl5MnDTfJvomrjXo=/1200x1200/smart/filters:quality(75):strip_icc():format(jpeg)/kly-media-production/medias/2944360/original/076016800_1571586069-PBSI_Denmark_Open_2019_DAY6_Final_MD-4.jpg" alt="" />
+  
+            <div class="link-box">
+		         <a class="popup-modal-dismiss">Close</a>
+            </div>
+
+	      </div><!-- modal-01 End -->
+
+         <div id="modal-02" class="popup-modal mfp-hide">
+
+		      <img class="scale-with-grid" src="https://cdn1-production-images-kly.akamaized.net/s_A-ErllozSms0HXc2-Hq2VjIdQ=/1200x1200/smart/filters:quality(75):strip_icc():format(jpeg)/kly-media-production/medias/3528197/original/038077400_1627886596-AP21214238433862.jpg" alt="" />
+
+            
+            <div class="link-box">
+		         <a class="popup-modal-dismiss">Close</a>
+            </div>
+
+	      </div><!-- modal-02 End -->
+
+         <div id="modal-03" class="popup-modal mfp-hide">
+
+		      <img class="scale-with-grid" src="https://cdn0-production-images-kly.akamaized.net/ZhnMimKEFlbXvnKo9tV7pAxVSGo=/1200x1200/smart/filters:quality(75):strip_icc():format(jpeg)/kly-media-production/medias/1320605/original/090211600_1471494340-Emas-Bulutangkis1.jpg" alt="" />
+
+     
+            <div class="link-box">
+		         <a class="popup-modal-dismiss">Close</a>
+            </div>
+	      </div><!-- modal-03 End -->
+
+         <div id="modal-04" class="popup-modal mfp-hide">
+
+		      <img class="scale-with-grid" src="https://cdn1-production-images-kly.akamaized.net/NA6guBpD9PTFaMZht_rZ3giFPKY=/1200x1200/smart/filters:quality(75):strip_icc():format(jpeg)/kly-media-production/medias/3969069/original/091531900_1647791419-6_AP22079505603823.jpg" alt="" />
+
+           
+            <div class="link-box">
+		         <a class="popup-modal-dismiss">Close</a>
+            </div>
+
+
+	      </div><!-- modal-01 End -->
+
+
+      </div> <!-- row End -->
+
+   </section> <!-- Portfolio Section End-->
+
+
+      <!-- Regist Section
+   ================================================== -->
+   <section id="regist">
+
+      <div class="row section-head">
+
+         <div class="two columns header-col">
+
+         </div>
+
+         <div class="ten columns"> 
+               
+            <h1 class="lead">DAFTAR DI BAWAH INI</h1  > 
+
+         </div>
+
+      </div>
+
+      <div class="row">
+
+         <div class="eight columns">
+
+            <!-- form -->
+            <form action="" method="post" id="contactForm" name="contactForm">
+            <fieldset>
+
+               <div>
+                  <label for="contactName">Nama</label>
+                  <input type="text" value="" size="35" id="contactName" name="contactName">
+               </div>
+
+               <div>
+                  <label for="contactEmail">Kelas</label>
+                  <input type="text" value="" size="35" id="contactEmail" name="contactEmail">
+               </div>
+
+               <div>
+                  <label for="contactSubject">Jenis Kelamin</label>
+                  <input type="text" value="" size="35" id="contactSubject" name="contactSubject">
+               </div>
+
+               <div>
+                  <button class="submit">Submit</button>
+                  <span id="image-loader">
+                     <img alt="" src="images/loader.gif">
+                  </span>
+               </div>
+
+            </fieldset>
+            </form> <!-- Form End -->
+
+            <!-- contact-warning -->
+            <div id="message-warning"> Error boy</div>
+            <!-- contact-success -->
+            <div id="message-success">
+               <i class="fa fa-check"></i>Your message was sent, thank you!<br>
+            </div>
+
+         </div>
+
+
+         <aside class="four columns footer-widgets">
+
+            <div class="widget widget_contact">
+
+               <h4>Alamat</h4>
+               <p class="address">
+                  <span>GOR Bulutangkis Cinangka</span><br>
+                  <span>Jl. Nusa Kenari<br>
+                        Cinangka, Kec. Sawangan, Kota Depok, Jawa Barat 16516
+                  </span><br>
+               </p>
+
+            </div>
+
+               <h4 class="widget-title">Hubungi</h4>
+						   <span>+62 **** **** **</span><br>
+					   </p>
+            </div>
+
+         </aside>
+
+   </div>
+
+</section> <!-- Contact Section End-->
+
+
+
+   <!-- footer
+   ================================================== -->
+   <footer>
+
+      <div class="row">
+
+         <div class="twelve columns">
+
+
+         </div>
+
+         <div id="go-top"><a class="smoothscroll" title="Back to Top" href="#home"><i class="icon-up-open"></i></a></div>
+
+      </div>
+
+   </footer> <!-- Footer End-->
+
+   <!-- Java Script
+   ================================================== -->
+   <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+   <script>window.jQuery || document.write('<script src="js/jquery-1.10.2.min.js"><\/script>')</script>
+   <script type="text/javascript" src="js/jquery-migrate-1.2.1.min.js"></script>
+
+   <script src="js/jquery.flexslider.js"></script>
+   <script src="js/waypoints.js"></script>
+   <script src="js/jquery.fittext.js"></script>
+   <script src="js/magnific-popup.js"></script>
+   <script src="js/init.js"></script>
+
+</body>
+
+</html>
